@@ -101,8 +101,7 @@ function validateform() {
     !validatename() ||
     !validatemail() ||
     !validateCollegeName() ||
-    !validatecontact() ||
-    !isFileUploaded()
+    !validatecontact()
   ) {
     submitError.style.color = "red";
     submitError.style.display = "block";
