@@ -208,7 +208,7 @@ app.post(
           date_time_submit: currentISTTime,
         };
 
-        db.query("INSERT INTO form_data SET ?", formData, (err, result) => {
+        db.query("INSERT INTO adddata SET ?", formData, (err, result) => {
           if (err) {
             req.flash("error", "internal server error" + err);
             return res.redirect("/register");
