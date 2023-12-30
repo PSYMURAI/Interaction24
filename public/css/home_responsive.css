@@ -1,0 +1,482 @@
+/*Ma=ke Responsive for tab view for Rajan Vishwakarma*/
+@media (max-width:425px) {
+	#intro {
+		width: 100%;
+		height: 40vh;
+		background: url(../img/gallery/17.JPG) center;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.news-container {
+		height: 30px;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		font-family: "Roboto", sans-serif;
+		box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+	}
+
+	.news-container .title {
+		position: absolute;
+		background: #df2020;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0px 10px;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		z-index: 200;
+	}
+
+	.news-container ul {
+		display: flex;
+		list-style: none;
+		animation: scroll 25s infinite linear;
+	}
+
+	.news-container ul li {
+		white-space: nowrap;
+		padding: 7px 20px;
+		color: #faf9f9;
+		font-size: 10px;
+		position: relative;
+	}
+
+	.news-container ul li::after {
+		content: "";
+		width: 1px;
+		height: 100%;
+		background: #b8b8b8;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.news-container ul li:last-child::after {
+		display: none;
+	}
+
+	@keyframes scroll {
+		from {
+			transform: translateX(100%);
+		}
+
+		to {
+			transform: translateX(-1000px);
+		}
+	}
+
+	#intro .intro-container {
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		top: 200px;
+		right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+		padding: 0 1px;
+	}
+
+	#intro #logo {
+		display: flex;
+		width: 200px;
+		padding: 10px 0;
+	}
+
+	#intro #logo img {
+		width: 100px;
+		height: 100px;
+		margin-top: -400px;
+		margin-left:-150px;
+	}
+
+	#intro #logo h1 {
+		margin-top: -220px;
+		font-size: 30px;
+		margin-left:-10px;
+	}
+
+
+	#yearOfInteraction {
+		color: #ebebeb;
+		font-weight: 300;
+		font-size: 10px;
+	}
+
+	#about h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	#about h3 {
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	#about p {
+		font-size: 10px;
+		margin-bottom: 20px;
+		color: #fff;
+	}
+
+	#about {
+		background: url("../img/about-bg.jpg");
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+		color: #fff;
+		padding: 30px 0 20px 0;
+	}
+
+	.card-container {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0px;
+		display: flex;
+		gap: 10px;
+		height: 40%;
+	}
+
+	.card {
+		width: 65%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+		text-align: center;
+		height: 50%;
+	}
+
+	.card img {
+		width: 100%;
+		height: 40%;
+	}
+
+	.name {
+		font-size: 12px;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+		padding: 5px 0px;
+		padding-top: 34px;
+		padding-bottom: 10px;
+	}
+
+	.card p {
+		font-size: 10px;
+		padding: 5px 0px;
+		margin: 0px 0px;
+	}
+
+	#Name {
+		padding-bottom: 0px;
+	}
+
+	.back-to-top {
+		left: -50px;
+	}
+
+	.name h3 {
+		font-size: 15px;
+	}
+
+	.name h4 {
+		font-size: 15px;
+	}
+
+
+	.contact_card_container{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0px;
+		display: flex;
+		gap: 10px;
+		height: 30%;
+	}
+	
+	.contact_card{
+		width: 65%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+		text-align: center;
+		height: 20%;
+	}
+	
+	.contact_card img{
+		width: 100%;
+		height: 40%;
+	}
+	
+	.contact_name h3{
+		font-size: 12px;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+		padding: 5px 0px;
+		padding-top: 34px;
+		font-family: 'Segoe UI';
+		padding-bottom: 10px;
+	}
+}
+
+@media (width>=426px) and (width<=768px){
+	.colimg{
+		top:0;
+		margin-top:0px;
+		padding-top:0px;
+		height:30%;
+	}
+
+	#intro {
+		width: 100%;
+		height: 100vh;
+		background: url(../img/gallery/17.JPG) center;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.news-container {
+		height: 30px;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		right: 0;
+		font-family: "Roboto", sans-serif;
+		box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+	}
+
+	.news-container .title {
+		position: absolute;
+		background: #df2020;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0px 10px;
+		color: white;
+		font-size: 10px;
+		font-weight: bold;
+		z-index: 200;
+	}
+
+	.news-container ul {
+		display: flex;
+		list-style: none;
+		animation: scroll 25s infinite linear;
+	}
+
+	.news-container ul li {
+		white-space: nowrap;
+		padding: 7px 20px;
+		color: #faf9f9;
+		font-size: 10px;
+		position: relative;
+	}
+
+	.news-container ul li::after {
+		content: "";
+		width: 1px;
+		height: 100%;
+		background: #b8b8b8;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.news-container ul li:last-child::after {
+		display: none;
+	}
+
+	@keyframes scroll {
+		from {
+			transform: translateX(100%);
+		}
+
+		to {
+			transform: translateX(-1000px);
+		}
+	}
+
+	#intro .intro-container {
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		top: 200px;
+		right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+		padding: 0 1px;
+	}
+
+	#intro #logo {
+		display: flex;
+		width: 500px;
+		padding: 10px 0;
+	}
+
+	#intro #logo img {
+		width: 80px;
+		height: 80px;
+		margin-top: -360px;
+	}
+
+	#intro #logo h1 {
+		margin-top: -180px;
+		font-size: 30px;
+	}
+
+	#yearOfInteraction {
+		color: #ebebeb;
+		font-weight: 300;
+		font-size: 10px;
+	}
+
+	#about h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	#about h3 {
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	#about p {
+		font-size: 10px;
+		margin-bottom: 20px;
+		color: #fff;
+	}
+
+	#about {
+		background: url("../img/about-bg.jpg");
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+		color: #fff;
+		padding: 30px 0 20px 0;
+	}
+
+	.card-container {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0px;
+		display: flex;
+		gap: 10px;
+		height: 40%;
+	}
+
+	.card {
+		width: 65%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+		text-align: center;
+		height: 50%;
+	}
+
+	.card img {
+		width: 100%;
+		height: 40%;
+	}
+
+	.name {
+		font-size: 15px;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+		padding: 5px 0px;
+		padding-top: 34px;
+		padding-bottom: 10px;
+	}
+
+	.card p {
+		font-size: 13px;
+		padding: 5px 0px;
+		margin: 0px 0px;
+	}
+
+	#Name {
+		padding-bottom: 0px;
+	}
+
+	.back-to-top {
+		left: -50px;
+	}
+
+	.name h3 {
+		font-size: 15px;
+	}
+
+	.name h4 {
+		font-size: 15px;
+	}
+
+
+	.contact_card_container{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0px;
+		display: flex;
+		gap: 10px;
+		height: 30%;
+	}
+	
+	.contact_card{
+		width: 65%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 0.2);
+		text-align: center;
+		height: 20%;
+	}
+	
+	.contact_card img{
+		width: 100%;
+		height: 40%;
+	}
+	
+	.contact_name h3{
+		font-size: 20px;
+		font-weight: bold;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+		padding: 5px 0px;
+		padding-top: 34px;
+		font-family: 'Segoe UI';
+		padding-bottom: 10px;
+	}
+}

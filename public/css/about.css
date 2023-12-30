@@ -1,0 +1,72 @@
+/* Global styles */
+body {
+	background: rgba(6, 12, 34, 0.98);
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+/* Container styles */
+.About-container {
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 2rem;
+	margin-top: 20px;
+	background-image: url('img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Heading styles */
+h2 {
+	color: #dc3545;
+	/* Red color for headings */
+}
+
+/* Bold text styles */
+b {
+	color: #e8e5e5;
+}
+
+/* Paragraph styles */
+p {
+	margin-left: 2rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 767px) {
+
+	.colimg {
+		margin-top: 0px;
+	}
+
+	/* Styles for mobile devices */
+	.About-container {
+		padding: 1rem;
+		/* Adjust padding for smaller screens */
+	}
+
+	/* Add hamburger menu for mobile */
+	/* You can customize the hamburger menu styles as needed */
+	.hamburger-menu {
+		display: block;
+	}
+
+	/* Hide non-essential elements for mobile */
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	/* Styles for tablets */
+	.About-container {
+		padding: 1.5rem;
+		/* Adjust padding for tablet screens */
+	}
+}
+
+/* Add more media queries for larger screens if needed */

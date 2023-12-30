@@ -1,0 +1,238 @@
+/*include Dhananjay's Yesterday's form css file*/
+
+#qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 50px;
+  background: linear-gradient(45deg, red, gray, black);
+  /* font-family: Arial, sans-serif; */
+  background-color: #f2f2f2;
+}
+
+.container {
+  background: radial-gradient(circle at 10% 20%,
+      rgba(226, 240, 234, 0.46) 0.1%,
+      rgba(233, 226, 226, 0.28) 90.1%);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  background-color: #e6e6e6;
+}
+
+label,
+input,
+select {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 10px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.day {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+option {
+  padding: 5px;
+}
+
+/* Highlight selected option */
+select:focus {
+  border-color: #007bff;
+}
+
+/* Style the dropdown options */
+select option {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style selected option */
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button#generate-qr-code {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#generate-qr-code:hover {
+  background-color: #0056b3;
+}
+
+/* Center the QR code container */
+#qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+span {
+  animation: blink 1s infinite;
+  color: red;
+}
+
+#submit-error {
+  margin-top: 10px;
+}
+
+#submitBt {
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#event[type="radio"] {
+  width: 20px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust input fields for smaller screens */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="file"] {
+    width: 100%;
+    /* Make input fields full width */
+    margin-bottom: 10px;
+    /* Add spacing between input fields */
+  }
+
+  /* Center-align text for smaller screens */
+  h2,
+  label {
+    text-align: center;
+  }
+}
+
+.success {
+  padding: auto;
+  background-color: rgba(60, 169, 107, 0.6);
+  height: auto;
+  border-radius: 5px;
+}
+
+.error {
+  padding: auto;
+  height: auto;
+  border-radius: 5px;
+
+  background-color: rgba(255, 99, 71, 0.6);
+}
+
+.message .success h2 {
+  color: white;
+}
+
+.message .error h2 {
+  color: white;
+}
+
+#generateQR {
+  padding: 8px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background: #0056b3;
+  color: white;
+}

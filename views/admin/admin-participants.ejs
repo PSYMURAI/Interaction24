@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin/participants.css">
+
+</head>
+
+<body>
+    <form action="/admin/logout" method="GET">
+        <button class="logout" type="submit">Logout</button>
+        <a class="link" href="/admin/dashboard">Dashboard</a>
+        <a class="link" href="/admin/dashboard/events">Events</a>
+    </form>
+
+    <div class="message">
+        <div class="success">
+            <h2>
+                <%= success %>
+            </h2>
+        </div>
+        <div class="error">
+            <h2>
+                <%= error %>
+            </h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>User Information</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>no</th>
+                    <th>Name</th>
+                    <th>College</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Event Day 1</th>
+                    <th>Event Day 2</th>
+                    <th>Event Day 3</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% let count=1; %>
+                    <% users.forEach((user)=> { %>
+                        <tr>
+                            <td>
+                                <%= count++ %>
+                            </td>
+                            <td>
+                                <%= user.name %>
+                            </td>
+                            <td>
+                                <%= user.collegeName %>
+                            </td>
+                            <td>
+                                <%= user.mobile %>
+                            </td>
+                            <td>
+                                <%= user.email %>
+                            </td>
+                            <td>
+                                <%= user.eventDay1 %>
+                            </td>
+                            <td>
+                                <%= user.eventDay2 %>
+                            </td>
+                            <td>
+                                <%= user.eventDay3 %>
+                            </td>
+                            <td><img src="/uploads/<%= user.paymentImage %>"
+                                    onclick="openImagePopup('/uploads/<%= user.paymentImage %>')"></td>
+                            <td class="action-buttons">
+                                <button class="approve" onclick="approveUser('<%= user.id %>')">Approve</button>
+                                <a href="/download/<%= user.id %>"><button class="download">Download</button></a>
+                            </td>
+                        </tr>
+                        <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <script src="/js/admin/participants.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Interaction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Interaction, Modern Interaction, Events" name="keywords">
+    <meta content="Modern Interaction conducting with a legacy spanning over two decades." name="description">
+
+    <!-- Favicons -->
+    <link href="img/Staff_Images/interactionLogo.png" rel="icon" alt="Interaction Favicon">
+    <link href="img/logo.jpg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/loader.css" rel="stylesheet">
+    <link href="css/home_responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <%- include('loader.ejs')%>
+        <!--==========================  Home Page  ============================-->
+        <header id="header">
+            <CENTER><img src="img/ModernCollege.png" class="colimg" alt="college_img" width="100%" height="170">
+
+                
+            </CENTER>
+
+            <div class="container">
+                <!--Navigation Block From 50 to 64-->
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="#intro">Home</a></li>
+                        <li><a href="/About">About</a></li>
+                        <li><a href="/coordinator">Coordinator</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" onclick="showModal()">Notice</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="Files/Rules.pdf" download="Rules.pdf">Rules</a></li>
+                        <li class="registers"><a href="/register">Register</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Daily Updates Section Done By Rajan Vishwakarma Line No. 65 to 80-->
+            <div class="news-container">
+                <div class="title">Daily Updates</div>
+
+                <marquee scrollamount="0.4" behaviour="scrolling" scrolldelay="0.1s">
+                    <ul>
+                        <li>Welcome To Modern College Ganeshkhind Pune-16 </li>
+                        <li>Acadamic Year 2023-2024 Interaction Program Going To Start !!! </li>
+                        <li>Registration Will Be Starting Soon !!! </li>
+                        <li>All participants receive Certificate!!! </li>
+                    </ul>
+                </marquee>
+            </div>
+        </header>
+        <!--==========================  Intro Section   ============================-->
+        <section id="intro">
+            <div class="intro-container wow fadeIn">
+                <div id="logo">
+                    <a href="img/Staff_Images/interactionLogo.png" target="_blank">
+                        <img src="img/Staff_Images/interactionLogo.png" alt="Interaction Logo">
+                    </a>
+                    <h1 class="mb-1 pb-0"><span>Interaction 2024</span></h1>
+                </div>
+
+                <!-- name : Shivam bisht, starting of code -->
+
+                <iframe width="60%" height="350" src="https://www.youtube.com/embed/5rEZGSFgZVY?si=6ZmpyPTtinT_i-Ni"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    style="border: 2px rgba(8, 4, 71, 0.578) solid" ; allowfullscreen></iframe>
+
+                <!-- name : shivam bisht, ending of code -->
+                <a href="/register" class="about-btn registers">Register</a>
+            </div>
+        </section>
+
+        <main id="main">
+
+            <!--==========================  About Section  ============================-->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Where</h3>
+                            <p>Progressive Education Society's<br> Modern College of Arts, Science and Commerce
+                                (Autonomous) Ganeshkhind, Pune-16.</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h3>When</h3>
+                            <p>Monday to Wednesday<br> 5<sup>th</sup>, 6<sup>th</sup> & 7<sup>th</sup> Febuary 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==============================================  College Head Coordinators ================================================-->
+            <section id="contact" class="section-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2> Under the guidance of</h2>
+                    </div>
+                    <!-- Name : Ayush Singh Line No. 557 to 574 -->
+
+                    <div class="card-container">
+                        <div class="card left">
+                            <CENTER><img src="img/Staff_Images/Principal_Sir.png" alt="Principal Sir"
+                                    style="margin-top: 2px;"></CENTER>
+                            <div class="name">Dr. Sanjay Kharat </div>
+                            <p>Principal</p>
+                        </div>
+
+                        <div class="card right">
+                            <CENTER><img src="img/Staff_Images/Vice_Principal_Ma'am.png" alt="Vice Principal"
+                                    style="margin-top: 2px;"></CENTER>
+                            <div class="name">Dr. Swati Kandharkar</div>
+                            <p>Vice Principal (Science)</p>
+                        </div>
+
+
+                        <div class="card right">
+                            <CENTER><img src="img/Staff_Images/HOD_Ma'am.png" style="margin-top:2px;"
+                                    alt="HOD of Computer Science"></CENTER>
+                            <div class="name" id="Name">Dr. Shubhangi Bhatambrekar</div>
+                            <p> HOD (Computer Science)</p>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="container">
+                        <!-- Name : Ayush Singh Line No. 557 to 574 -->
+
+                        <center>
+                            <h1><b> Interaction Coordinators </b></h1>
+                        </center>
+                        <div class="card-container">
+                            <div class="card left">
+                                <CENTER><img src="img/Staff_Images/pooja_Ma'am.png" alt="Pooja Ma'am"></CENTER>
+                                <div class="name">Prof. Pooja Bahirat</div>
+                            </div>
+
+                            <div class="card right">
+                                <CENTER><img src="img/Staff_Images/Prerana_Ma'am.png" alt="Image Right"></CENTER>
+                                <div class="name">Prof. Prerana Sherla</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                </div>
+            </section>
+
+
+            <!--==========================
+      Schedule Section   Name : Rajan Vishwakarma LineNo: 132 to 296 (Event Names And Images)
+    ============================-->
+            <section id="schedule" class="section-with-bg">
+                <div class="container wow fadeInUp">
+                    <div class="section-header">
+                        <h2>Event Schedule</h2>
+                    </div>
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <!--Day 1 Event List Button-->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+                        </li>
+
+                        <!--Day 2 Event List Button-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+                        </li>
+
+                        <!--Day 3 Event List Button-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content row justify-content-center">
+
+                        <!-- Schdule Day 1 -->
+                        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>09:30 AM to 10:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://www.pngfind.com/pngs/m/670-6706437_registration-icon-png-transparent-png.png"
+                                            alt="Registration Logo">
+                                    </div>
+                                    <h4>Registration</h4>
+                                    <p>Registration will be starting soon !!!.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>10:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://i.ytimg.com/vi/GKV-p8UlsVM/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLARlg_DqgpWZbkqhhLqI0nQf9tVuQ"
+                                            alt="Brain Battle Logo">
+                                    </div>
+                                    <h4>Brain Battle<span></span></h4>
+                                    <p>Brain battle is a Quiz competition, who work for bring all experts and creative
+                                        minds
+                                        together.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>11:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://th.bing.com/th/id/OIP.GfZUJ_mnBRJNjrkN8h-hpAHaFj?pid=ImgDet&rs=1"
+                                            alt="Creativity Club Logo">
+                                    </div>
+                                    <h4>Creativity Club <span></span></h4>
+                                    <p>The Creativity Club Poster Competition is to foster creativity, innovation, and
+                                        self-expression through the medium of poster design.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>12:00 NOON</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://img.icons8.com/color/452/instagram-reel.png"
+                                            alt="Quick Reel Logo">
+                                    </div>
+                                    <h4>Quick Reel<span></span></h4>
+                                    <p>A Quick Reel Competition is a creative challenge that invites individuals or
+                                        teams to
+                                        produce short video reels, within a limited timeframe.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Schdule Day 1 -->
+
+                        <!-- Schdule Day 2 -->
+                        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>09:30 AM to 10:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://www.pngfind.com/pngs/m/670-6706437_registration-icon-png-transparent-png.png"
+                                            alt="Registration Logo">
+                                    </div>
+                                    <h4>Registration<span></span></h4>
+                                    <p>Registration will starting for limited time.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>11:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://aliabdaal.com/wp-content/uploads/2023/01/DATABASE-01-768x672.png"
+                                            alt="Hack In the Drak LOGO">
+                                    </div>
+                                    <h4>Hack In The Dark <span></span></h4>
+                                    <p>Hack In The Dark Competitions are a fun and challenging way to test
+                                        your coding skills and problem-solving abilities.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>12:00 NOON</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://www.freeiconspng.com/uploads/hardware-icon-9.png"
+                                            alt="Quantum Assembler">
+                                    </div>
+                                    <h4>Quantum Assembler <span></span></h4>
+                                    <p>An "Quantum Assembler" competition typically involves assembling physical
+                                        objects,
+                                        kits, or components.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>02:00 PM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://desireerumbaugh.com/wp-content/uploads/2017/03/WisdomWarriorsLogo-350x92.png"
+                                            alt="Wisdom War">
+                                    </div>
+                                    <h4>Wisdom War<span></span></h4>
+                                    <p>A "Wisdom War" competition usually encourages participants to make the most of a
+                                        specific opportunity, often related to demonstrating their skills, talents, or
+                                        innovative ideas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Schdule Day 2 -->
+
+                        <!-- Schdule Day 3 -->
+                        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>09:30 AM to 10:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://www.pngfind.com/pngs/m/670-6706437_registration-icon-png-transparent-png.png"
+                                            alt="Registration Logo">
+                                    </div>
+                                    <h4>Registration<span></span></h4>
+                                    <p>Registration will starting for limited time.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>11:00 AM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://i5.walmartimages.com/asr/f3a93c7f-f184-4082-86e9-2c4c5899391f.d5aa9755499e98e046250cd51035732c.png"
+                                            alt="Gold Rust Quest">
+                                    </div>
+                                    <h4>Gold Rust Quest<span></span></h4>
+                                    <p>In a Gold Rust Quest, teams follows the clues to find hidden "Gold" or
+                                        destinations.It's
+                                        an adventurous journey guided by riddles and puzzles.</p>
+                                </div>
+                            </div>
+
+                            <div class="row schedule-item">
+                                <div class="col-md-2"><time>12:00 PM</time></div>
+                                <div class="col-md-10">
+                                    <div class="speaker">
+                                        <img src="https://i.pinimg.com/236x/51/d1/b8/51d1b8460c62979b69f57e92655df65b.jpg"
+                                            alt="Gamer Strike">
+                                    </div>
+                                    <h4>Gamer Strike<span></span></h4>
+                                    <p>In Gamer Strike, participants compete in games.Players face off in a virtual
+                                        arena,
+                                        showcasing their gaming skills and strategy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Schdule Day 3 -->
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="web-developers" class="container section-with-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Web Developer's</h2>
+                        <center>
+                            <h4><b>Guided by Interaction Coordinator's:<b></h4><i>Prof. Pooja Bahirat | Prof. Prerana
+                                Sherla.
+                        </center></i></b></h4>
+                        </center>
+                    </div>
+
+                    <div
+                        class="row no-gutters developers-wrap clearfix d-flex justify-content-center align-items-center ">
+                        <!-- Top three developers -->
+                        <div class="col-lg-3 col-md-4 col-xs-6 p-5"
+                            style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                            <div class="developer-logo"><img src="img/Developers/Akshay_shiralsheth.png"
+                                    class="img-fluid" alt="Developer Akshay"></div>
+                            <p style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                                <b style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Akshay
+                                    Shiralsheth<br>Data Analysts & Management<br></b>Connect : </b><a
+                                    href="https://www.linkedin.com/in/akshay-shiralsheth-65b6391a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 p-5"
+                            style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                            <div class="developer-logo"><img src="img/Developers/Aryan_wagh.png" class="img-fluid"
+                                    alt="Developer Aryan"></div>
+                            <p style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                                <b style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Aryan
+                                    Wagh<br>Frontend Developer<br>Connect : </b><a
+                                    href="https://www.linkedin.com/in/aryan-wagh-481a7a259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </p>
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 p-5"
+                            style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                            <div class="developer-logo"><img src="img/Developers/Rajan_Vishwakarma.png"
+                                    class="img-fluid" alt="Developer Rajan"></div>
+                            <p style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                                <b style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Rajan
+                                    Vishwakarma<br>Frontend Developer<br></b>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 p-5"
+                            style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                            <div class="developer-logo"><img src="img/Developers/Dhananjay_Kakade.png" class="img-fluid"
+                                    alt="Developer Dhananjay"></div>
+                            <p style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                                <b style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Dhananjay
+                                    Kakade<br>MERN Stack Developer(ADMIN)<br></b>Connect: <a
+                                    href="https://www.linkedin.com/in/dhananjay-kakade-657087294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-xs-6 p-5"
+                            style="text-align: center; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                            <div class="developer-logo"><img src="img/Developers/Prasad_deshpande.png" class="img-fluid"
+                                    alt="Developer Prasad"></div>
+                            <p style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+                                <b style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">Prasad
+                                    Deshpande<br>Full Stack Developer<br></b>Connect : </b><a
+                                    href="https://www.linkedin.com/in/prasad-deshpande-a59530267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--========================================
+      Sponsors Section
+    ============================-->
+            <section id="sponsors" class="section-with-bg wow fadeInUp">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Sponsors</h2>
+                    </div>
+
+                    <div class="row no-gutters sponsors-wrap clearfix">
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/SPPU.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/BOM.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/Cosmos.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/IDBI.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/HDFC.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/EXCELER.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/Rian.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="sponsor-logo">
+                                <img src="img/sponsors/Gayatri Bhel.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Teacher's Co-ordinater section Done By Ayush Singh line No. 587 to 646 -->
+
+            <!--==========================
+      Contact Section
+    ============================-->
+            <section id="contact" class="section-bg wow fadeInUp">
+
+                <div class="container">
+
+                    <div class="section-header">
+                        <h2>Contact Us</h2>
+                        <p>Interaction Student Coordinator's.</p>
+                    </div>
+                    <!-- Name : Ayush Singh Line No. 557 to 574 -->
+
+                    <div class="contact_card_container">
+                        <div class="contact_card left">
+                            <img src="img/Event_Coordinators/Anurag_Salunkhe.png" alt="Anurag Salunkhe">
+                            <div class="contact_name">
+                                <h3>Anurag Salunkhe<br>+91 8788778181</h3>
+                            </div>
+                        </div>
+
+                        <div class="contact_card right">
+                            <img src="img/Event_Coordinators/Ritesh_bhadane.png" alt="Ritesh Bhadane">
+                            <div class="contact_name">
+                                <h3>Ritesh Bhadane<br>+91 9373211848</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            <!--==========================
+      F.A.Q Section
+    ============================-->
+            <section id="faq" class="wow fadeInUp">
+
+                <div class="container">
+
+                    <div class="section-header">
+                        <h2>F.A.Q </h2>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <ul id="faq-list">
+
+                                <li>
+                                    <a data-toggle="collapse" class="collapsed" href="#faq1">How to Register? <i
+                                            class="fa fa-minus-circle"></i></a>
+                                    <div id="faq1" class="collapse" data-parent="#faq-list">
+                                        <p>
+                                            You can directly vist our official interaction event website and click
+                                            on register button and fill the form.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="collapse" href="#faq2" class="collapsed">Where can i know how to
+                                        register ?<i class="fa fa-minus-circle"></i></a>
+                                    <div id="faq2" class="collapse" data-parent="#faq-list">
+                                        <p>
+                                            You can vist our YouTube channel to know about the Registration process.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="collapse" href="#faq3" class="collapsed">When will Registration
+                                        process
+                                        get
+                                        started ??<i class="fa fa-minus-circle"></i></a>
+                                    <div id="faq3" class="collapse" data-parent="#faq-list">
+                                        <p>
+                                            Registration has not started yet, but as soon as it get started you will be
+                                            notified soon to get updates visit our notice section.
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- Notice Section Done Bye Rajan Vishwakarma 
+  Line No. 661 to 678 -->
+
+            <!--==========================
+    Notice Section
+  ============================-->
+
+            <div id="noticeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Notice </h2>
+                    <p style="color: rgb(218, 92, 54);">Welcome To Modern College Ganeshkhind Pune-16</p>
+                    <p>1.Acadamic Year 2023-2024 Interaction Program Going To Start.</p>
+                    <p>2.Acadamic Year 2023-2024 Interaction Program Going To Start. </p>
+                    <p>3.Registration Will Be Starting Soon.</p>
+                    <p>3.Registration Will Be Starting Soon.</p>
+                    <p>3.Registration Will Be Starting Soon.</p>
+                    <p>3.Registration Will Be Starting Soon.</p>
+                </div>
+            </div>
+
+            <!--==========================
+    Footer
+  ============================-->
+            <%- include('footer.ejs')%>
+                <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+                <!-- JavaScript Libraries -->
+                <script src="lib/jquery/jquery.min.js"></script>
+                <script src="lib/jquery/jquery-migrate.min.js"></script>
+                <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="lib/easing/easing.min.js"></script>
+                <script src="lib/superfish/hoverIntent.js"></script>
+                <script src="lib/superfish/superfish.min.js"></script>
+                <script src="lib/wow/wow.min.js"></script>
+                <script src="lib/venobox/venobox.min.js"></script>
+                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+                <!-- Template Main Javascript File -->
+                <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+/*Make All required stuff responsive for tab view for rajan*/
+.logo {
+    width: 7rem;
+    height: 7rem;
+}
+
+#name {
+    padding: 0.2rem;
+}
+
+.backgroundImg {
+    background-repeat: no-repeat;
+    display: absolute;
+    width: 100%;
+    position: absolute;
+}
+
+#display_text {
+    color: white;
+    margin-top: 11rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    transform: translate(50, -50);
+    opacity: 2;
+}
+
+.main-parent {
+    padding: 0.1rem 0rem;
+    margin-left: 5rem;
+    /* Adjust margins as needed */
+    margin-right: 5rem;
+    /* Adjust margins as needed */
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.main-card {
+    box-shadow: 15px 20px 8px 0 rgba(227, 7, 7, 0.2);
+    background-color: rgb(223, 217, 217);
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3rem;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 1rem;
+    border-width: 0.5rem;
+}
+
+.image-text-box {
+    display: grid;
+    grid-template-rows: 25% 25%;
+}
+
+.image-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    max-width: 100%;
+    /* Adjust as needed */
+    margin: 10px;
+}
+
+#images {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.text-box {
+    margin-left: 1rem;
+    /* Adjust margin as needed */
+    margin-right: 1rem;
+    /* Adjust margin as needed */
+    width: 100%;
+    height: auto;
+    margin-top: 4px;
+}
+
+/* Media Query for smaller screens (Mobile) */
+@media (max-width: 425px) {
+    #display_text{
+        font-size: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .image-box b{
+        font-size:10px;
+    }
+
+    .main-parent {
+        display: block;
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Media Query for medium screens (Tablet) */
+@media (min-width: 426px) and (max-width: 1024px) {
+    .main-parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+/* Media Query for larger screens (Desktop) */
+@media (min-width: 1025px) {
+    .main-parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

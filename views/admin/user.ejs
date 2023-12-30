@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin/user.css">
+
+</head>
+
+<body>
+    <form action="/admin/logout" method="GET">
+        <button class="logout" type="submit">Logout</button>
+        <a class="link" href="/admin/dashboard">Dashboard</a>
+        <a class="link" href="/admin/dashboard/events">Events</a>
+    </form>
+
+    <div class="message">
+        <div class="success">
+            <h2>
+                <%= success %>
+            </h2>
+        </div>
+        <div class="error">
+            <h2>
+                <%= error %>
+            </h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>User Information</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>no</th>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>College</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Event Day 1</th>
+                    <th>Event Day 2</th>
+                    <th>Event Day 3</th>
+                    <th>Image</th>
+                    <th>date and time </th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <% let count=1; %>
+                    <% users.forEach((user)=> { %>
+                        <tr>
+                            <td>
+                                <%= count++ %>
+                            </td>
+                            <td>
+                                <%= user.id %>
+                            </td>
+                            <td>
+                                <%= user.name %>
+                            </td>
+                            <td>
+                                <%= user.collegeName %>
+                            </td>
+                            <td>
+                                <%= user.mobile %>
+                            </td>
+                            <td>
+                                <%= user.email %>
+                            </td>
+                            <td>
+                                <%= user.eventDay1 %>
+                            </td>
+                            <td>
+                                <%= user.eventDay2 %>
+                            </td>
+                            <td>
+                                <%= user.eventDay3 %>
+                            </td>
+                            <td>
+                                <%= user.paymentImage %>
+                            </td>
+                            <td>
+                                <%= user.date_time_submit %>
+                            </td>
+                           
+                        </tr>
+                        <% }); %>
+                        
+                    </tbody>
+                </table>
+                <a href="/admin/download-excel" class="download-button">Download Excel</a>
+
+    </div>
+    <script src="/js/admin/participants.js"></script>
+
+</body>
+
+</html>
