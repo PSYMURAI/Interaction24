@@ -175,7 +175,7 @@ app.post(
       (selectErr, results) => {
         if (selectErr) {
           console.error(selectErr);
-          req.flash("error", "Internal server error");
+          req.flash("error", selectErr);
           return res.redirect("/register");
         }
 
