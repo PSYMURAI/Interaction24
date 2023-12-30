@@ -210,7 +210,7 @@ app.post(
 
         db.query("INSERT INTO adddata SET ?", formData, (err, result) => {
           if (err) {
-            req.flash("error", "internal server error");
+            req.flash("error", "internal server error" + err);
             return res.redirect("/register");
           } else {
             req.flash("success", "Thank You for register");
