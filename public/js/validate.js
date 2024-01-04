@@ -1,115 +1,104 @@
-var nameError = document.getElementById("name-error");
-var emailError = document.getElementById("email-error");
-var collegeError = document.getElementById("college-error");
-var phoneError = document.getElementById("mobile-error");
-var submitError = document.getElementById("submit-error");
-var submitBtn = document.getElementById("submitBtn");
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
+const collegeError = document.getElementById("college-error");
+const phoneError = document.getElementById("mobile-error");
+const submitError = document.getElementById("submit-error");
+const submitBtn = document.getElementById("submitBt"); // Corrected the ID
 
-function validatename() {
-  var name = document.getElementById("name").value;
-  if (name.length == 0) {
-    nameError.style.color = "red";
-    nameError.innerHTML = "please enter name";
+
+
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+function validateName() {
+  const name = document.getElementById("name").value.trim(); // Trim to remove leading/trailing spaces
+  const nameParts = name.split(/\s+/); // Split by spaces to get individual name parts
+
+  if (nameParts.length < 3) {
+    showError(nameError, "Please enter first name, middle name, and last name");
     return false;
   }
-  nameError.style.color = "green";
-  nameError.style.animation = "none";
-  nameError.innerHTML = "valid name";
+
+  // Check if each part is not empty
+  for (const part of nameParts) {
+    if (part.length === 0) {
+      showError(nameError, "Each part of the name should not be empty");
+      return false;
+    }
+  }
+
+  showSuccess(nameError, "Valid name");
   return true;
 }
 
 function validateCollegeName() {
-  var college = document.getElementById("collegeName").value;
-  if (college.length == 0) {
-    collegeError.style.color = "red";
-    collegeError.innerHTML = "please enter college Name";
+  const college = document.getElementById("collegeName").value;
+  if (college.length === 0) {
+    showError(collegeError, "Please enter college name");
     return false;
   }
-  collegeError.style.color = "green";
-  collegeError.style.animation = "none";
-  collegeError.innerHTML = "valid college Name";
+  showSuccess(collegeError, "Valid college name");
   return true;
 }
 
-function validatecontact() {
-  var contact = document.getElementById("mobile").value;
+function validateContact() {
+  const contact = document.getElementById("mobile").value;
+  const isValidContact = validatePhoneNumber(contact);
 
-  function validatePhoneNumber(contact) {
-    // Regular expression to match exactly 10 digits and only numeric characters
-    var regex = /^\d{10}$/;
-    return regex.test(contact);
-}
-
-
-  if (validatePhoneNumber(contact)) {
-    phoneError.style.animation = "none";
-    phoneError.innerHTML = " valid contact";
-    phoneError.style.color = "green";
+  if (isValidContact) {
+    showSuccess(phoneError, "Valid contact");
     return true;
   } else {
-    phoneError.style.color = "red";
-    phoneError.innerHTML = "please enter valid contact";
+    showError(phoneError, "Please enter a valid contact");
     return false;
-  } 
-
-
-
-  if (contact.length == 0) {
-    phoneError.style.color = "red";
-    phoneError.innerHTML = "please enter valid contact";
-    return false;
-  }
-  if (contact.length < 10) {
-    phoneError.style.color = "red";
-    phoneError.innerHTML = "please enter valid contact";
-    return false;
-  }
-  if (contact.length > 10) {
-    phoneError.style.color = "red";
-    phoneError.innerHTML = "please enter valid contact";
-    return false;
-  }
-  if (contact.length === 10) {
-    phoneError.style.animation = "none";
-    phoneError.innerHTML = " valid contact";
-    phoneError.style.color = "green";
-    return true;
   }
 }
 
-function validatemail() {
-  var email = document.getElementById("email").value;
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+function validatePhoneNumber(contact) {
+  const regex = /^\d{10}$/;
+  return regex.test(contact);
+}
+
+function validateEmail() {
+  const email = document.getElementById("email").value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailRegex.test(email)) {
-    emailError.style.animation = "none";
-    emailError.innerHTML = " valid email";
-    emailError.style.color = "green";
+    showSuccess(emailError, "Valid email");
     return true;
   } else {
-    // Invalid email
-    emailError.style.color = "red";
-    emailError.innerHTML = "please enter valid email";
+    showError(emailError, "Please enter a valid email");
     return false;
   }
 }
-const successAlert = document.getElementById("success");
-const errorAlert = document.getElementById("error");
 
-function validateform() {
-  console.log("hiii");
+function validateform(event) {
+  const checkboxId = 'event';
+  const checkboxes = document.querySelectorAll('input[id="' + checkboxId + '"]:checked');
+  
+  if (checkboxes.length === 0) {
+    // Using SweetAlert for a more visually appealing alert
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please select at least one event!',
+
+    });
+  
+    event.preventDefault(); // Prevent form submission immediately
+    return false;
+  }
+  
+
   if (
-    !validatename() ||
-    !validatemail() ||
+    !validateName() ||
+    !validateEmail() ||
     !validateCollegeName() ||
-    !validatecontact()
+    !validateContact() ||
+    !isFileUploaded()
   ) {
-    submitError.style.color = "red";
-    submitError.style.display = "block";
-    submitError.innerHTML = "please check the details ";
-
-    setTimeout(function () {
-      submitError.style.display = "none";
-    }, 3000);
+    showError(submitError, "Please check the details");
+    event.preventDefault();
     return false;
   }
 
@@ -119,6 +108,18 @@ function validateform() {
 
   return true;
 }
+
 function isFileUploaded() {
   const fileInput = document.getElementById("paymentImage");
+  // Implement file upload validation if needed
+}
+
+function showError(element, message) {
+  element.style.color = "red";
+  element.innerHTML = message;
+}
+
+function showSuccess(element, message) {
+  element.style.color = "green";
+  element.innerHTML = message;
 }
