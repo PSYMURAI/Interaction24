@@ -15,7 +15,7 @@ dotenv.config({ path: "./config/config.env" });
 
 const app = express();
 const port = process.env.PORT || 3000;
-app.locals.registrationOpen = false;
+app.locals.registrationOpen = true;
 
 app.use(cookieParser());
 
@@ -175,7 +175,7 @@ app.post(
       (selectErr, results) => {
         if (selectErr) {
           console.error(selectErr);
-          req.flash("error", selectErr);
+          req.flash("error", "Internal server error");
           return res.redirect("/register");
         }
 
@@ -210,7 +210,7 @@ app.post(
 
         db.query("INSERT INTO adddata SET ?", formData, (err, result) => {
           if (err) {
-            req.flash("error", "internal server error" + err);
+            req.flash("error", "internal server error");
             return res.redirect("/register");
           } else {
             req.flash("success", "Thank You for register");
@@ -267,7 +267,7 @@ const adminCredentials = {
 app.get("/admin", (req, res) => {
   res.render("admin/admin-login");
 });
-app.get("/admin/dashboard/user",authenticateToken, (req, res) => {
+app.get("/admin/dashboard/user", (req, res) => {
   db.query("SELECT * FROM admin_record", (err, results) => {
     if (err) {
       console.error(err);
