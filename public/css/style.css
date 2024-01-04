@@ -54,22 +54,6 @@ h6 {
 .wow {
     visibility: hidden;
 }
-
-
-/* Prelaoder */
-
-#preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #fff url("") no-repeat center center;
-}
-
-
 /* Back to top button */
 
 .back-to-top {
@@ -481,7 +465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
     width: 100%;
-    height: 150vh;
+    height: 160vh;
     background: url(../img/gallery/17.JPG) top center;
     background-size: cover;
     overflow: hidden;
@@ -550,7 +534,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 50px;
     transition: 0.5s;
     line-height: 1;
-    margin: 10px;
+    margin: 30px;
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
@@ -600,6 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     overflow: hidden;
     position: relative;
     color: #fff;
+    height:300px;
     padding: 30px 0 40px 0;
 }
 
@@ -624,7 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     color: #fff;
 }
 
@@ -1389,7 +1374,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .news-container {
     position: absolute;
-    top: 270px;
+    top: 240px;
     margin-top: 30px;
     margin-bottom: 0px;
     left: 0;
@@ -1514,33 +1499,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* <--- card ---> */
 
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.card {
-    width: 300px;
-    height: 320px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 4px 4px 8px 4px rgba(0.2, 0.2, 0.2, 0.2);
-    text-align: center;
-}
-
-.card img {
-    width: 95%;
-    height: 95%;
-}
-
-.name {
-    margin-top: -30px;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 0px;
-}
 
 
 .contact_card_container{
@@ -1572,21 +1530,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #logo {
-    width: 600px;
-    display: flex;
-    margin-top: 250px;
-    margin-bottom: -150px;
-    margin-left: 150px;
+    width:auto;
+    display: inline;
 }
 
 #logo img {
-    width: 95%;
-    height: 45%;
+    margin-top:200px;
+    width: 150px;
+    height:150px;
 }
 
-#logo h1 {
-    margin-top: 50px;
-    margin-left: 10px;
+#logo a h1 span {
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+#Youtube_Video{
+    width:800px;
+    height:350px;
 }
 
 @media (width<=425px) {
