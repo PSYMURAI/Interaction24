@@ -12,6 +12,7 @@ const dotenv = require("dotenv");
 require("dotenv").config();
 const ExcelJS = require('exceljs');
 dotenv.config({ path: "./config/config.env" });
+const compression = require('compression')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -34,9 +35,10 @@ app.use(
     resave: false,
     saveUninitialized: false,
   })
-);
-app.use(flash());
-
+  );
+  app.use(flash());
+  app.use(compression());
+  
 app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg");
   res.locals.error_msg = req.flash("error_msg");
