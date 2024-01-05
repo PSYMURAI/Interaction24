@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Our Gallery</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Interaction gallery, Our memories 2023, Interaction" name="keywords">
+  <meta content="Our Interaction Event Gallery" name="description">
+
+  <!-- Favicons -->
+  <link href="img/Staff_Images/interactionLogo.Webp" rel="icon" alt="Interaction Favicon">
+  <link href="img/interactionLogo.Webp" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/loader.css" rel="stylesheet">
+
+  <style>
+    .section-header h2 {
+      color: white;
+      padding-top: 0px;
+      margin-top: 12rem;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 20px;
+      font-size: 37px;
+      transform: translate(-50, -50);
+      opacity: 2;
+    }
+
+    @media (width<=425px) {
+      .section-header h2 {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body style="background-image: url('img/background.Webp');">
+  <%- include('loader.ejs')%>
+    <!--==========================   Gallery Section   ============================-->
+
+
+    <!--==========================  Header  ============================-->
+    <header id="header">
+      <img src="img/ModernCollege.Webp" width="100%" height="170" class="colimg" alt="college_img">
+
+      <div class="container">
+        <!--Interaction Main Logo Block from line 45 to 49-->
+
+        <!--Navigation Block From 52 to 59-->
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="/">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/coordinator">Coordinator</a></li>
+            <li><a href="Files/Rules.pdf" download="Rules.pdf">Rules</a></li>
+            <li class="registers"><a href="/register">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--==========================  Our Memories  ============================-->
+
+    <!-- Our Last Year Memories Section From 67 to 140-->
+
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>
+            OUR MEMORIES 2023</h2>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/1.Webp" alt="Speaker 1" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/2.Webp" alt="Speaker 2" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/3.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/4.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/5.Webp" alt="Speaker 4" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/6.Webp" alt="Speaker 5" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/7.Webp" alt="Speaker 6" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/8.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/9.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/10.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/gallery/11.Webp" alt="Speaker 3" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==========================  Footer Section  ============================-->
+    <%- include('footer.ejs')%>
+      <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/superfish/hoverIntent.js"></script>
+      <script src="lib/superfish/superfish.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/venobox/venobox.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+      <!-- Contact Form JavaScript File -->
+      <script src="contactform/contactform.js"></script>
+
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+</body>
+
+</html>

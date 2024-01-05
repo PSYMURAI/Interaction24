@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin/events.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome, Admin</h1>
+    </header>
+
+    <div class="status">
+        <p>
+            Registration is currently
+            <span style="color:<%= registrationOpen ? '#28a745' : '#dc3545' %>;">
+                <%= registrationOpen ? 'open' : 'closed' %>
+            </span>.
+        </p>
+    </div>
+    <main>
+
+        <div class="message">
+            <div class="success">
+                <h2>
+                    <%= success %>
+                </h2>
+            </div>
+            <div class="error">
+                <h2>
+                    <%= error %>
+                </h2>
+            </div>
+        </div>
+
+        <form action="/admin/update-registration" method="POST">
+            <button type="submit" name="action" value="open">Open Registration</button>
+            <button type="submit" name="action" value="close">Close Registration</button>
+        </form>
+
+
+        <form action="/admin/logout" method="GET">
+            <button type="submit">Logout</button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
