@@ -1,0 +1,11 @@
+{
+    "theme_color": "#b81007",
+    "background_color": "#151414",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/interaction24",
+    "name": "interaction24",
+    "short_name": "interaction24",
+    "description": "college event by computer science dept of modern college ganeshkhind pune",
+    "icons": []
+}
